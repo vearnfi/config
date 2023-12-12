@@ -1,0 +1,30 @@
+{
+  "name": "@vearnfi/config",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vearnfi/config.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vearnfi/config/issues"
+  },
+  "homepage": "https://github.com/vearnfi/config#readme",
+  "devDependencies": {
+    "@vechain/connex-types": "^2.1.0",
+    "typescript": "^5.3.3"
+  }
+}
