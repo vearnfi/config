@@ -2,7 +2,9 @@
 
 export type Address = `0x${string}`;
 
-export type ChainId = 100009 | 100010 | 100011;
+export const CHAIN_IDS = [100009, 100010, 100011] as const
+
+export type ChainId = typeof CHAIN_IDS[number];
 // ^ 100009 = production, 100010 = staging, 100011 = development
 
 export type DexName = "verocket" | "vexchange";
