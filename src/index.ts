@@ -2,9 +2,9 @@
 
 export type Address = `0x${string}`;
 
-export const CHAIN_IDS = [100009, 100010, 100011] as const
+export const chainIds = [100009, 100010, 100011] as const
 
-export type ChainId = typeof CHAIN_IDS[number];
+export type ChainId = typeof chainIds[number];
 // ^ 100009 = production, 100010 = staging, 100011 = development
 
 export type DexName = "verocket" | "vexchange";
@@ -56,6 +56,7 @@ export type ChainData = {
   registerEventsEndpoint: string;
   /** Endpoint to fetch latest block number. */
   getHeadEndpoint: string;
+  setHeadEndpoint: string;
   getAccountSwapsEndpoint: string;
   getAccountStatsEndpoint: string;
   getTradeForecastEndpoint: string;
@@ -104,6 +105,7 @@ const mainChain: ChainData = {
   ],
   trader: "0x0000000000000000000000000000000000000000", // TODO
   getHeadEndpoint: "https://",
+  setHeadEndpoint: "https://",
   registerEventsEndpoint: "https://",
   getAccountSwapsEndpoint: "https://",
   getAccountStatsEndpoint: "https://",
@@ -148,6 +150,7 @@ const testChain: ChainData = {
   ],
   trader: "0x0317B19b8b94aE1D5Bfb4727b9064fe8118aA305",
   getHeadEndpoint: "https://gethead-3co32ksh6a-uc.a.run.app",
+  setHeadEndpoint: "https://sethead-3co32ksh6a-uc.a.run.app",
   registerEventsEndpoint: "https://registerevents-3co32ksh6a-uc.a.run.app",
   getAccountSwapsEndpoint: "https://getaccountswaps-3co32ksh6a-uc.a.run.app",
   getAccountStatsEndpoint: "https://getaccountstats-3co32ksh6a-uc.a.run.app",
@@ -163,6 +166,7 @@ export const chains: Record<ChainId, ChainData> = {
   100011: {
     ...testChain,
     getHeadEndpoint: "http://127.0.0.1:5001/vefarmdev/us-central1/gethead",
+    setHeadEndpoint: "http://127.0.0.1:5001/vefarmdev/us-central1/sethead",
     registerEventsEndpoint:
       "http://127.0.0.1:5001/vefarmdev/us-central1/registerevents",
     getAccountSwapsEndpoint:
