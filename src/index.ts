@@ -59,7 +59,7 @@ export type ChainData = {
   setHeadEndpoint: string;
   getAccountSwapsEndpoint: string;
   getAccountStatsEndpoint: string;
-  getTradeForecastEndpoint: string;
+  getTradesForecastEndpoint: string;
 };
 
 const mainChain: ChainData = {
@@ -109,7 +109,7 @@ const mainChain: ChainData = {
   registerEventsEndpoint: "https://",
   getAccountSwapsEndpoint: "https://",
   getAccountStatsEndpoint: "https://",
-  getTradeForecastEndpoint: "https://",
+  getTradesForecastEndpoint: "https://",
 };
 
 const testChain: ChainData = {
@@ -154,7 +154,7 @@ const testChain: ChainData = {
   registerEventsEndpoint: "https://registerevents-3co32ksh6a-uc.a.run.app",
   getAccountSwapsEndpoint: "https://getaccountswaps-3co32ksh6a-uc.a.run.app",
   getAccountStatsEndpoint: "https://getaccountstats-3co32ksh6a-uc.a.run.app",
-  getTradeForecastEndpoint: "https://gettradeforecast-3co32ksh6a-uc.a.run.app",
+  getTradesForecastEndpoint: "https://gettradesforecast-3co32ksh6a-uc.a.run.app",
 };
 
 /**
@@ -173,8 +173,8 @@ export const chains: Record<ChainId, ChainData> = {
       "http://127.0.0.1:5001/vefarmdev/us-central1/getaccountswaps",
     getAccountStatsEndpoint:
       "http://127.0.0.1:5001/vefarmdev/us-central1/getaccountstats",
-    getTradeForecastEndpoint:
-      "http://127.0.0.1:5001/vefarmdev/us-central1/gettradeforecast",
+    getTradesForecastEndpoint:
+      "http://127.0.0.1:5001/vefarmdev/us-central1/gettradesforecast",
   },
 };
 
