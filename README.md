@@ -1,3 +1,3 @@
-# config
+# @vearnfi/config
 
-Repository containing list of contract addresses associated to the vearn.finance protocol for each chain.
+Repository containing a list of contract addresses associated with the vearn.finance protocol for each chain.
