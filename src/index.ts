@@ -2,9 +2,9 @@
 
 export type Address = `0x${string}`;
 
-export const chainIds = [100009, 100010, 100011] as const
+export const chainIds = [100009, 100010, 100011] as const;
 
-export type ChainId = typeof chainIds[number];
+export type ChainId = (typeof chainIds)[number];
 // ^ 100009 = production, 100010 = staging, 100011 = development
 
 export type DexName = "verocket" | "vexchange";
@@ -154,7 +154,8 @@ const testChain: ChainData = {
   registerEventsEndpoint: "https://registerevents-3co32ksh6a-uc.a.run.app",
   getAccountSwapsEndpoint: "https://getaccountswaps-3co32ksh6a-uc.a.run.app",
   getAccountStatsEndpoint: "https://getaccountstats-3co32ksh6a-uc.a.run.app",
-  getTradesForecastEndpoint: "https://gettradesforecast-3co32ksh6a-uc.a.run.app",
+  getTradesForecastEndpoint:
+    "https://gettradesforecast-3co32ksh6a-uc.a.run.app",
 };
 
 /**
