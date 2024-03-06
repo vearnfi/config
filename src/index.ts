@@ -148,7 +148,7 @@ const testChain: ChainData = {
       pairVVET_VTHO: "0x0000000000000000000000000000000000000000",
     },
   ],
-  trader: "0x0317B19b8b94aE1D5Bfb4727b9064fe8118aA305",
+  trader: "0x18558Ae54e703390C39F4Aa936659701D8da4B84",
   getHeadEndpoint: "https://gethead-3co32ksh6a-uc.a.run.app",
   setHeadEndpoint: "https://sethead-3co32ksh6a-uc.a.run.app",
   registerEventsEndpoint: "https://registerevents-3co32ksh6a-uc.a.run.app",
