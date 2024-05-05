@@ -66,7 +66,7 @@ const mainChain: ChainData = {
   name: "VeChain",
   chain: "VeChain",
   network: "main",
-  rpc: ["https://mainnet.veblocks.net/"],
+  rpc: ["https://mainnet.veblocks.net/", "https://mainnetc2.vechain.network", "https://mainnetc1.vechain.network"],
   faucets: [],
   nativeCurrency: {
     name: "VeChain",
@@ -116,7 +116,7 @@ const testChain: ChainData = {
   name: "VeChain Testnet",
   chain: "VeChain",
   network: "test",
-  rpc: ["https://testnet.veblocks.net/"],
+  rpc: ["https://testnet.veblocks.net/", "https://vethor-node-test.vechaindev.com", "https://testnetc1.vechain.network"],
   faucets: ["https://faucet.vecha.in"],
   nativeCurrency: {
     name: "VeChain",
