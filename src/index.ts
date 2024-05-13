@@ -67,7 +67,7 @@ const mainChain: ChainData = {
   chain: "VeChain",
   network: "main",
   rpc: [
-    "https://mainnet.veblocks.net/",
+    "https://mainnet.veblocks.net",
     "https://mainnetc2.vechain.network",
     "https://mainnetc1.vechain.network",
   ],
@@ -121,7 +121,7 @@ const testChain: ChainData = {
   chain: "VeChain",
   network: "test",
   rpc: [
-    "https://testnet.veblocks.net/",
+    "https://testnet.veblocks.net",
     "https://vethor-node-test.vechaindev.com",
     "https://testnetc1.vechain.network",
   ],
