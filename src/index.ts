@@ -57,8 +57,8 @@ export type ChainData = {
   /** Endpoint to fetch latest block number. */
   getHeadEndpoint: string;
   setHeadEndpoint: string;
-  getAccountSwapsEndpoint: string;
-  getAccountStatsEndpoint: string;
+  getUserSwapsEndpoint: string;
+  getUserStatsEndpoint: string;
   getTradesForecastEndpoint: string;
 };
 
@@ -111,8 +111,8 @@ const mainChain: ChainData = {
   getHeadEndpoint: "https://",
   setHeadEndpoint: "https://",
   registerEventsEndpoint: "https://",
-  getAccountSwapsEndpoint: "https://",
-  getAccountStatsEndpoint: "https://",
+  getUserSwapsEndpoint: "https://",
+  getUserStatsEndpoint: "https://",
   getTradesForecastEndpoint: "https://",
 };
 
@@ -160,8 +160,8 @@ const testChain: ChainData = {
   getHeadEndpoint: "https://gethead-3co32ksh6a-uc.a.run.app",
   setHeadEndpoint: "https://sethead-3co32ksh6a-uc.a.run.app",
   registerEventsEndpoint: "https://registerevents-3co32ksh6a-uc.a.run.app",
-  getAccountSwapsEndpoint: "https://getaccountswaps-3co32ksh6a-uc.a.run.app",
-  getAccountStatsEndpoint: "https://getaccountstats-3co32ksh6a-uc.a.run.app",
+  getUserSwapsEndpoint: "https://getuserswaps-3co32ksh6a-uc.a.run.app",
+  getUserStatsEndpoint: "https://getuserstats-3co32ksh6a-uc.a.run.app",
   getTradesForecastEndpoint:
     "https://gettradesforecast-3co32ksh6a-uc.a.run.app",
 };
@@ -178,10 +178,10 @@ export const chains: Record<ChainId, ChainData> = {
     setHeadEndpoint: "http://127.0.0.1:5001/vefarmdev/us-central1/sethead",
     registerEventsEndpoint:
       "http://127.0.0.1:5001/vefarmdev/us-central1/registerevents",
-    getAccountSwapsEndpoint:
-      "http://127.0.0.1:5001/vefarmdev/us-central1/getaccountswaps",
-    getAccountStatsEndpoint:
-      "http://127.0.0.1:5001/vefarmdev/us-central1/getaccountstats",
+    getUserSwapsEndpoint:
+      "http://127.0.0.1:5001/vefarmdev/us-central1/getuserswaps",
+    getUserStatsEndpoint:
+      "http://127.0.0.1:5001/vefarmdev/us-central1/getuserstats",
     getTradesForecastEndpoint:
       "http://127.0.0.1:5001/vefarmdev/us-central1/gettradesforecast",
   },
