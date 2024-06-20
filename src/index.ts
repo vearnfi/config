@@ -12,10 +12,12 @@ export type DexName = "verocket" | "vexchange";
 export type Dex = {
   /** DEX name. */
   name: DexName;
+  /** WETH contract address. */
+  weth: Address;
   /** UniV2 router contract address. */
   routerV2: Address;
-  /** VVET-VTHO pair contract address. */
-  pairVVET_VTHO: Address;
+  /** WETH-VTHO pair contract address. */
+  pairWETH_VTHO: Address;
 };
 
 /**
@@ -46,10 +48,10 @@ export type ChainData = {
   }[];
   /** VTHO contract address. */
   vtho: Address;
-  /** VVET contract address. */
-  vvet: Address;
   /** List of supported DEXs. */
   dexs: Dex[];
+  /** VexWrapper contract address. */
+  vexWrapper: Address;
   /** Trader contract address. */
   trader: Address;
   /** Register events endpoint. */
@@ -93,20 +95,22 @@ const mainChain: ChainData = {
       standard: "none",
     },
   ],
-  vtho: "0x0000000000000000000000000000456E65726779", // token0
-  vvet: "0x45429a2255e7248e57fce99e7239aed3f84b7a53", // token1
+  vtho: "0x0000000000000000000000000000456E65726779",
   dexs: [
     {
       name: "verocket",
+      weth: "0x0000000000000000000000000000000000000000", // TODO
       routerV2: "0x576da7124c7bb65a692d95848276367e5a844d95",
-      pairVVET_VTHO: "0x29a996b0ebb7a77023d091c9f2ca34646bea6ede",
+      pairWETH_VTHO: "0x29a996b0ebb7a77023d091c9f2ca34646bea6ede",
     },
     {
       name: "vexchange",
+      weth: "0x0000000000000000000000000000000000000000",
       routerV2: "0x6c0a6e1d922e0e63901301573370b932ae20dadb",
-      pairVVET_VTHO: "0x0000000000000000000000000000000000000000", // TODO
+      pairWETH_VTHO: "0x0000000000000000000000000000000000000000", // TODO
     },
   ],
+  vexWrapper: "0x0000000000000000000000000000000000000000", // TODO
   trader: "0x0000000000000000000000000000000000000000", // TODO
   getHeadEndpoint: "https://",
   setHeadEndpoint: "https://",
@@ -143,19 +147,21 @@ const testChain: ChainData = {
     },
   ],
   vtho: "0x0000000000000000000000000000456E65726779", // token0
-  vvet: "0x86fb5343bbecffc86185c023a2a6ccc76fc0afd8", // token1
   dexs: [
     {
       name: "verocket",
+      weth: "0x0000000000000000000000000000000000000000", // TODO
       routerV2: "0x91e42759290239a62ac757cf85bb5b74ace57927",
-      pairVVET_VTHO: "0x1e5e9a6540b15a3efa8d4e8fadb82cc8e0e167ca",
+      pairWETH_VTHO: "0x1e5e9a6540b15a3efa8d4e8fadb82cc8e0e167ca",
     },
     {
       name: "vexchange",
+      weth: "0x0000000000000000000000000000000000000000", // TODO
       routerV2: "0x01d6b50b31c18d7f81ede43935cadf79901b0ea0",
-      pairVVET_VTHO: "0x0000000000000000000000000000000000000000",
+      pairWETH_VTHO: "0x0000000000000000000000000000000000000000",
     },
   ],
+  vexWrapper: "0x0000000000000000000000000000000000000000", // TODO
   trader: "0xABb2556c9bbdd9d34e6fE2537fCbADF37C8865E2",
   getHeadEndpoint: "https://gethead-3co32ksh6a-uc.a.run.app",
   setHeadEndpoint: "https://sethead-3co32ksh6a-uc.a.run.app",
