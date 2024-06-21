@@ -7,3 +7,12 @@ Repository containing a list of contract addresses associated with the vearn.fin
 ```
 npm i @vearnfi/config
 ```
+
+### Bumping package version
+
+After updating the package version, run the update-config bash script to update and commit the changes for the related projects in the protocol.
+
+```
+chmod +x get_current_directory.sh
+./update-config.sh
+```

@@ -25,6 +25,8 @@ update_package() {
   # Navigate to the project directory
   cd $CURRENT_DIR/$project_path || { echo "Directory $project_path not found!"; exit 1; }
 
+  nvm use 18
+
   if [ "$project_path" = "contracts" ]; then
     # Install the package in development mode for contracts project
     npm install --save-dev "$PACKAGE_NAME@latest"
@@ -38,7 +40,7 @@ update_package() {
     echo "Successfully updated $PACKAGE_NAME in $project_path"
 
     # Stage all changes
-    git add .
+    git add --all
 
     # Commit changes with a message
     git commit -m "Updated $PACKAGE_NAME package"
