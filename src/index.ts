@@ -162,7 +162,7 @@ const testChain: ChainData = {
     },
   ],
   vexWrapper: "0x0bb72c2423cff281E9e7aa49b0ebb3a2D3280603",
-  trader: "0xABb2556c9bbdd9d34e6fE2537fCbADF37C8865E2",
+  trader: "0x3147E73FADDF17c186BdE71E8B4c19A462aa85c7",
   getHeadEndpoint: "https://gethead-3co32ksh6a-uc.a.run.app",
   setHeadEndpoint: "https://sethead-3co32ksh6a-uc.a.run.app",
   registerEventsEndpoint: "https://registerevents-3co32ksh6a-uc.a.run.app",
