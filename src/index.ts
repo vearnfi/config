@@ -99,18 +99,18 @@ const mainChain: ChainData = {
   dexs: [
     {
       name: "verocket",
-      weth: "0x45429a2255e7248e57fce99e7239aed3f84b7a53",
-      routerV2: "0x576da7124c7bb65a692d95848276367e5a844d95",
-      pairWETH_VTHO: "0x29a996b0ebb7a77023d091c9f2ca34646bea6ede",
+      weth: "0x45429a2255e7248e57fce99e7239aed3f84b7a53", // ✅
+      routerV2: "0x576da7124c7bb65a692d95848276367e5a844d95", // ✅
+      pairWETH_VTHO: "0x29a996b0ebb7a77023d091c9f2ca34646bea6ede", // ✅
     },
     {
       name: "vexchange",
-      weth: "0xd8ccdd85abdbf68dfec95f06c973e87b1b5a9997",
-      routerV2: "0x6c0a6e1d922e0e63901301573370b932ae20dadb",
-      pairWETH_VTHO: "0x2b6fc877ff5535b50f6c3e068bb436b16ec76fc5",
+      weth: "0xd8ccdd85abdbf68dfec95f06c973e87b1b5a9997", // ✅
+      routerV2: "0x6c0a6e1d922e0e63901301573370b932ae20dadb", // ✅
+      pairWETH_VTHO: "0x2b6fc877ff5535b50f6c3e068bb436b16ec76fc5", // ✅
     },
   ],
-  vexWrapper: "0x0000000000000000000000000000000000000000", // TODO
+  vexWrapper: "0x3c3847A92B57A3163d26cc2eb22F53b33BaA34D8",
   trader: "0x0000000000000000000000000000000000000000", // TODO
   getHeadEndpoint: "https://",
   setHeadEndpoint: "https://",
