@@ -1,5 +1,8 @@
 #!/bin/bash
 
+export NVM_DIR=$HOME/.nvm;
+source $NVM_DIR/nvm.sh;
+
 # Get the absolute path of the current directory
 CURRENT_DIR=$(pwd)
 
