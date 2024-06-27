@@ -111,13 +111,13 @@ const mainChain: ChainData = {
     },
   ],
   vexWrapper: "0x3c3847A92B57A3163d26cc2eb22F53b33BaA34D8",
-  trader: "0x0000000000000000000000000000000000000000", // TODO
-  getHeadEndpoint: "https://",
-  setHeadEndpoint: "https://",
-  registerEventsEndpoint: "https://",
-  getUserSwapsEndpoint: "https://",
-  getUserStatsEndpoint: "https://",
-  getTradesForecastEndpoint: "https://",
+  trader: "0xff3C6dABd0DCaF77363d59fDBC52939073f88014",
+  getHeadEndpoint: "https://gethead-umgsnyajoq-uc.a.run.app",
+  setHeadEndpoint: "https://sethead-umgsnyajoq-uc.a.run.app",
+  registerEventsEndpoint: "https://registerevents-umgsnyajoq-uc.a.run.app",
+  getUserSwapsEndpoint: "https://getuserswaps-umgsnyajoq-uc.a.run.app",
+  getUserStatsEndpoint: "https://getuserstats-umgsnyajoq-uc.a.run.app",
+  getTradesForecastEndpoint: "https://gettradesforecast-umgsnyajoq-uc.a.run.app",
 };
 
 const testChain: ChainData = {
